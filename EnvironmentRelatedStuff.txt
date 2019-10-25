@@ -1,0 +1,61 @@
+Imports necessary overall:
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+
+import spacy
+import nltk
+from nltk.tokenize.toktok import ToktokTokenizer
+import re
+from bs4 import BeautifulSoup
+import unicodedata
+import en_core_web_lg
+import en_core_web_sm
+from contractions import contractions_dict
+
+import twint
+import csv
+import sys
+from datetime import datetime
+import logging
+
+from textstat.textstat import textstatistics, easy_word_set, legacy_round
+from nltk.corpus import stopwords
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.linear_model import LogisticRegression
+import statsmodels.api as sm
+import statsmodels
+import matplotlib.pyplot as plt
+from sklearn import metrics
+from sklearn.feature_selection import RFE
+from sklearn.ensemble import RandomForestClassifier
+import sklearn
+from sklearn import svm
+from sklearn import metrics
+import xgboost
+
+SETTING UP THE ENVIRONMENT WITH ANACONDA:
+conda create -n fakenewsdemo1 python=3.6
+conda install nltk
+conda install spacy
+conda install scikit-learn
+conda install BeautifulSoup4
+conda install pandas
+conda install jupyter
+conda install statsmodels
+conda install matplotlib
+pip install pickle5
+pip install contractions
+pip install twint
+pip install unicodedata2
+pip install textstat
+pip install textsearch
+pip install xgboost
+
+#python -m spacy download en
+#python -m spacy download en_core_web_sm
+#python -m spacy download en_core_web_lg
